@@ -41,25 +41,23 @@ A backend application built using **FastAPI** and **SQLAlchemy** that allows use
 ---
 
 ## 📁 Project Structure
-fastapi-song-api/
-├── app/
-│ ├── main.py
-│ ├── models.py
-│ ├── schemas.py
-│ ├── database.py
-│ └── routers/
-│ ├── songs.py
-│ ├── purchase.py
-│ └── playlist.py
-├── tests/
-│ ├── test_songs.py
-│ ├── test_purchase.py
-│ └── test_playlist.py
-├── requirements.txt
-└── README.md
-
-
----
+├── app/ <br>
+├── main.py<br>
+├── app/ <br>
+│ ├── main.py<br>
+│ ├── models.py<br>
+│ ├── schemas.py<br>
+│ ├── database.py<br>
+│ └── routers/<br>
+│ ├── songs.py<br>
+│ ├── purchase.py<br>
+│ └── playlist.py<br>
+├── tests/<br>
+│ ├── test_songs.py<br>
+│ ├── test_purchase.py<br>
+│ └── test_playlist.py<br>
+├── requirements.txt<br>
+└── README.md<br>
 
 ## 🛠 How to Run Locally
 
@@ -71,17 +69,22 @@ cd fastapi-song-api
 ```
 
 ### 2. Create and activate a virtual environment
+```bash
 python -m venv venv
 venv\Scripts\activate  # Windows
 # OR
 source venv/bin/activate  # macOS/Linux
-
+```
 
 ### 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Start the development server
+```bash 
 uvicorn app.main:app --reload
+```
 
 ### 5. Open the Swagger UI
 Visit: http://127.0.0.1:8000/docs
